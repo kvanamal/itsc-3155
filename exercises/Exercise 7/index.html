@@ -1,0 +1,19 @@
+<!--A place where you can type your name with placeholder test-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!--A button with the text Click Me-->
+<button id="my-button">Click Me</button>
+<!--Starts javascript script-->
+<script>
+
+    //declares variables connected to html
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+  //In the event when the button is clicked
+  myButton.addEventListener('click', function () {
+    //Checks that a text was submitted and not blank
+    if (nameInput.value !== '') {
+        //JS alerts a dialog box with Hello and the inputted name
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
